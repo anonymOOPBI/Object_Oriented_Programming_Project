@@ -1,0 +1,5 @@
+This project implements a Variational Autoencoder (VAE), a model combining deep learning and probabilistic modeling for both representation learning and image synthesis.
+The VAE is constructed using Object-Oriented Programming (OOP) principles to create a highly modular and extensible architecture, emphasizing the separation of concerns.
+Key Architectural Features:
+• Abstraction and Inheritance: The core class structure relies heavily on Inheritance and Abstract Methods. The base classes (BiCoder, Encoder, Decoder) utilize Python's built-in abc module (from abc import ABC, abstractmethod) to define mandatory methods (like call() and _build_network()) that must be implemented by concrete subclasses (MLP/CNN).
+• Program Execution: The primary script, train_vae.py, orchestrates the training and performs the three required analytical tasks: latent space visualization (using TSNE), image generation from the prior p(z), and image reconstruction from the posterior q(z∣x). Execution is highly flexible via argparse.
